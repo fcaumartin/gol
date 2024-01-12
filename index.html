@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+      canvas {
+        border: 1px solid black;
+        cursor: none;
+      }
+    </style>
+</head>
+<body>
+    <canvas id="stockGraph" width="1200" height="800"></canvas>
+    <br>
+    <button id="btn" onclick="start()">start</button>
+    <button id="clear" >clear</button>
+    <button id="p1" >puffer 1</button>
+    <button id="p2" >puffer 2</button>
+    <button id="p3" >puffer 3</button>
+    <button id="c1" >canon 1</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    generation=<span id="generation"></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="ouvert">sphérique</label>
+    <input type="checkbox" name="ouvert" id="ouvert" onchange="changeOuvert()" >
+</body>
+</html>
+
+<script src="script.js"></script>
