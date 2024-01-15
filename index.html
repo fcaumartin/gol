@@ -12,19 +12,25 @@
     </style>
 </head>
 <body>
-    <canvas id="stockGraph" width="1200" height="800"></canvas>
+    <canvas id="world" width="1200" height="741"></canvas>
     <br>
-    <button id="btn" onclick="start()">start</button>
+    <button id="start">start</button>
+    <button id="next">next</button>
     <button id="clear" >clear</button>
+    <br>
     <button id="p1" >puffer 1</button>
     <button id="p2" >puffer 2</button>
     <button id="p3" >puffer 3</button>
-    <button id="c1" >canon 1</button>
+    <button id="g1" >canon 1</button>
+    <button id="g2" >canon 2</button>
+    <br>
+    <input type="range" id="range-size" name="cowbell" min="10" max="500" value="400" step="5" />
+    <span id="label-size"></span>
     &nbsp;&nbsp;&nbsp;&nbsp;
     generation=<span id="generation"></span>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <label for="ouvert">sphérique</label>
-    <input type="checkbox" name="ouvert" id="ouvert" onchange="changeOuvert()" >
+    <label for="open-world">sphérique</label>
+    <input type="checkbox" name="open-world" id="open-world" >
 </body>
 </html>
 
